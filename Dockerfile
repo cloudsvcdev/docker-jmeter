@@ -35,6 +35,7 @@ ENV PATH $PATH:$JMETER_BIN
 
 # Entrypoint has same signature as "jmeter" command
 COPY entrypoint.sh /
+COPY ext /apache-jmeter-5.4.1/lib/ext
 
 WORKDIR	${JMETER_HOME}
 
